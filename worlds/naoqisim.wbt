@@ -1,0 +1,45 @@
+#VRML_SIM R2018a utf8
+WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+  ]
+  title "Aldebaran Nao H25 V5.0"
+  basicTimeStep 20
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "NAO foot material"
+      coulombFriction [
+        7
+      ]
+      bounce 0.3
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.06977387400214739 -0.9905006309379438 -0.11849095585008788 4.2967
+  position 2.29759 0.850855 -0.873861
+  follow "NAO"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+PointLight {
+  ambientIntensity 1
+  intensity 0.6
+  location 2 0.9 0
+}
+Floor {
+  size 25 25
+  tileSize 0.8 0.8
+  texture [
+    "textures/checkered_marble.jpg"
+  ]
+}
+Nao {
+  controller "naoqisim"
+  controllerArgs "9559"
+  synchronization FALSE
+}
