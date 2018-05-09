@@ -1,0 +1,56 @@
+#VRML_SIM R2018a utf8
+WorldInfo {
+  info [
+    "Simulation of the Robocup Standard Platform League"
+  ]
+  title "Robocup"
+  basicTimeStep 20
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "NAO foot material"
+      coulombFriction [
+        7
+      ]
+      bounce 0.3
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.3007230166282256 0.9494910525013069 0.08962370495566718 5.53939
+  position -1.47392 1.09923 2.85539
+  follow "ball"
+}
+Background {
+  skyColor [
+    0.333333 0.666667 1
+  ]
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction -0.5 -2 -0.5
+  intensity 0.3
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.5 -0.5 0.5
+  intensity 0.5
+  castShadows TRUE
+}
+RobotstadiumSoccerField {
+  frame1Color 0.9 0.8 0.2
+  frame2Color 0.2 0.4 0.8
+}
+DEF BALL Ball {
+  translation 1.325 0.0325 0
+}
+DEF PLAYER Nao {
+  translation 0 0.33 0
+  color 0.8 0.8 0.8
+  controller "naoqisim"
+  controllerArgs "9559"
+  synchronization FALSE
+  jersey NaoJersey {
+  }
+}
