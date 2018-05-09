@@ -40,4 +40,4 @@ Start Choregraphe.
 Choose Connection > Connect to or click the "Connect to" button.
 Click the "Wake Up" button (sun-like icon on the top right corner of the Choregraphe window) to make sure the stiffness is on.
 
-See also: http://doc.aldebaran.com/2-1/software/webots/webots_index.html
+For more information, refer to: http://doc.aldebaran.com/2-1/software/webots/webots_index.html
