@@ -1,5 +1,5 @@
 # naoqisim
-naoqisim controller for simulated NAO robots in Webots
+NAOqi enabled controller for simulated NAO robots in Webots
 
 ## Introduction
 
