@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naoqisim", "naoqisim.vcxproj", "{1F95D6C3-DCDE-31C5-DBEF-1A3E570CA23B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naoqisim", "naoqisim.vcxproj", "{877C73CA-77BA-6769-FA01-98E42CF826A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1F95D6C3-DCDE-31C5-DBEF-1A3E570CA23B}.Release|Win32.ActiveCfg = Release|Win32
-		{1F95D6C3-DCDE-31C5-DBEF-1A3E570CA23B}.Release|Win32.Build.0 = Release|Win32
+		{877C73CA-77BA-6769-FA01-98E42CF826A4}.Release|Win32.ActiveCfg = Release|Win32
+		{877C73CA-77BA-6769-FA01-98E42CF826A4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

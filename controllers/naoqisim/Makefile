@@ -25,7 +25,7 @@ clean:
 else
 
 ifndef WEBOTS_NAOSIM_PATH
-WEBOTS_NAOSIM_PATH = $(WEBOTS_HOME)/projects/robots/aldebaran/aldebaran/simulator-sdk
+WEBOTS_NAOSIM_PATH = ../../aldebaran/simulator-sdk
 endif
 
 ### -----C/C++ Options-----

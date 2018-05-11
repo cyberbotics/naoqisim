@@ -32,7 +32,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>..\..\..\..\..\include\controller\c;..\..\aldebaran\simulator-sdk\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WEBOTS_HOME)\include\controller\c;..\..\aldebaran\simulator-sdk\include</AdditionalIncludeDirectories>
       <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS </AdditionalOptions>
     </ClCompile>
     <Link>
@@ -42,7 +42,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(ProjectDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>..\..\..\..\..\msys64\mingw32\lib;..\..\aldebaran\simulator-sdk\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(WEBOTS_HOME)\msys64\mingw32\lib;..\..\aldebaran\simulator-sdk\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>alnaosim.lib;alrobotmodel.lib;alsimutils.lib;qi.lib;Controller.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
