@@ -3,6 +3,8 @@ $(error WEBOTS_HOME environment variable is not set, please set it before runnin
 endif
 
 default clean:
+	@+echo "# aldebaran simulator-sdk"
+	@+make --silent -C aldebaran $(MAKECMDGOALS)
 	@+echo "# naoqisim controller"
 	@+make --silent -C controllers/naoqisim $(MAKECMDGOALS)
 	@+echo "# challenge_solder controller "
