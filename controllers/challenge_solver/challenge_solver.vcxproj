@@ -33,7 +33,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>
-        ..\..\..\..\..\robots\aldebaran\aldebaran\simulator-sdk\include 
+        ..\..\aldebaran\simulator-sdk\include 
       </AdditionalIncludeDirectories>
       <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS -D NOMINMAX</AdditionalOptions>
     </ClCompile>
@@ -44,7 +44,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>
-        ..\..\..\..\..\robots\aldebaran\aldebaran\simulator-sdk\lib
+        ..\..\aldebaran\simulator-sdk\lib
       </AdditionalLibraryDirectories>
       <AdditionalDependencies>alcommon.lib;alerror.lib;alproxies.lib;alvalue.lib;opencv_core243.lib;
 opencv_imgproc243.lib;qi.lib;qitype.lib;qimessaging.lib;%(AdditionalDependencies)</AdditionalDependencies>

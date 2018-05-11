@@ -31,10 +31,10 @@ clean:
 else
 
 ifndef WEBOTS_NAOSIM_PATH
-WEBOTS_NAOSIM_PATH = $(WEBOTS_HOME)/projects/robots/aldebaran/aldebaran/simulator-sdk
+WEBOTS_NAOSIM_PATH = ../../aldebaran/simulator-sdk
 endif
 
-SOCCER_RESOURCES_PATH = $(WEBOTS_HOME)/projects/samples/contests/robotstadium
+SOCCER_RESOURCES_PATH = ../..
 NS_LIB_PATH = $(SOCCER_RESOURCES_PATH)/libraries/nao_soccer
 SV_LIB_PATH = $(SOCCER_RESOURCES_PATH)/libraries/soccer_vision
 INCLUDE = -I"$(NS_LIB_PATH)" -I"$(SV_LIB_PATH)" -I"$(SOCCER_RESOURCES_PATH)/controllers/nao_soccer_supervisor" -I"$(WEBOTS_NAOSIM_PATH)/include"

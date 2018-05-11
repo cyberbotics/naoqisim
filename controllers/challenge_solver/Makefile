@@ -30,7 +30,7 @@ clean:
 
 else
 
-RESOURCES_PATH = $(WEBOTS_HOME)/projects/robots/aldebaran/aldebaran/simulator-sdk
+RESOURCES_PATH = ../../aldebaran/simulator-sdk
 INCLUDE = -I"$(RESOURCES_PATH)/include"
 LIBRARIES = -L"$(RESOURCES_PATH)/lib" -Wl,-rpath,"$(RESOURCES_PATH)/lib" -lalcommon -lalerror -lalproxies -lalvalue -lboost_system -lopencv_core -lopencv_imgproc -lqi -lqitype
 USE_C_API = true

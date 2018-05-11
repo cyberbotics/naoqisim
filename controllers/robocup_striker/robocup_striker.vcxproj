@@ -32,10 +32,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>
-        ..\..\..\..\samples\contests\robotstadium\libraries\nao_soccer;
-        ..\..\aldebaran\simulator-sdk\include
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\libraries\nao_soccer;
+..\..\aldebaran\simulator-sdk\include</AdditionalIncludeDirectories>
       <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS -D NOMINMAX</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -44,11 +42,8 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>
-        ..\..\..\..\samples\contests\robotstadium\libraries\nao_soccer;
-        ..\..\..\..\samples\contests\robotstadium\libraries\soccer_vision;
-        ..\..\aldebaran\simulator-sdk\lib
-      </AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libraries\nao_soccer;
+..\..\libraries\soccer_vision;..\..\aldebaran\simulator-sdk\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>nao_soccer.lib;
 soccer_vision_VS.lib;
 alcommon.lib;alerror.lib;alproxies.lib;alvalue.lib;opencv_core243.lib;

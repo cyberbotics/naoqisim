@@ -5,7 +5,7 @@ WEBOTS_HOME_PATH=$(subst $(space),\ ,$(strip $(subst \,/,$(WEBOTS_HOME))))
 include $(WEBOTS_HOME_PATH)/resources/Makefile.os.include
 
 ifndef WEBOTS_NAOSIM_PATH
-WEBOTS_NAOSIM_PATH = $(WEBOTS_HOME)/projects/robots/aldebaran/aldebaran/simulator-sdk
+WEBOTS_NAOSIM_PATH = ../../aldebaran/simulator-sdk
 endif
 CXX_SOURCES = $(wildcard *.cpp)
 
