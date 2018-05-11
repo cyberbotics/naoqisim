@@ -1,6 +1,10 @@
 # naoqisim
 NAOqi enabled controller for simulated NAO robots in Webots
 
+## DISCLAIMER
+
+This software is provided as-is with the hope it may help users. It may or may not work, without any guarantee. It is not maintained any more, neither by Aldebaran / SoftBank Robotics, nor by Cyberbotics.
+
 ## Introduction
 
 This repository contains the source code and dependencies needed to build the naoqisim Webots controller. This controller is used to connect a Webots-simulated NAO robot to the NAOqi programming interface, including the Choregraphe graphical programming interface.
