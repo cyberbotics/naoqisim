@@ -107,3 +107,41 @@ Note that the simulation speed decreases as the resolution increases.
 It is possible to hide the camera viewports (purple frame) in Webots, by setting the `cameraPixelSize` field to 0.
 It is also possible to completely switch off the camera simulation by adding the "-nocam" option before the NAOqi port number in the `controllerArgs` field, e.g. "-nocam 9559".
 
+### Known Problems
+
+#### macOS Support
+
+SoftBank Robotics dropped the `simulator SDK` support for macOS since the `2.1.2.17` version.
+Webots includes this latest version for macOS, however it doesn't work on recent macOS versions.
+
+#### Timing Issues: Getting the Right Speed for Realistic Simulation
+
+Choregraphe uses exclusively real-time and so the robot's motions are meant to be carried out in real-time.
+The Webots simulator uses a virtual time base that can be faster or slower than real-time, depending on the CPU and GPU power of the host computer.
+If the CPU and GPU are powerful enough, Webots can keep up with real-time, in this case the speed indicator in Webots shows approximately 1.0x, otherwise the speed indicator goes below 1.0x.
+Choregraphe motions will play accurately only if Webots simulation speed is around 1.0x.
+When Webots simulation speed drifts away from 1.0x, the physics simulation becomes wrong (unnatural) and thus Choregraphe motions don't work as expected anymore.
+For example, if Webots indicates 0.5x, this means that it is only able to simulate at half real-time the motion provided by Choregraphe: the physics simulation is too slow.
+Therefore it is important to keep the simulation speed as close as possible to 1.0x.
+There are currently no means of synchronizing Webots and Choregraphe, but this problem will be addressed in a future release.
+It is often possible to prevent the simulation speed from going below 1.0x, by keeping the CPU and GPU load as low as possible.
+There are several ways to do that, here are the most effective ones:
+
+- Switch off the simulation of the Nao cameras with the "-nocam" option, as mentioned above.
+- Increase the value of `WorldInfo.displayRefesh` in the Scene Tree.
+- Switch off the rendering of the shadows: change to FALSE the `castShadows` field of each light source in the Scene Tree.
+- Reduce the dimensions of the 3D view in Webots, by manually resizing the GUI components.
+- Remove unnecessary objects from the simulation, in particular objects with physics.
+
+#### Unexpected Webots Crashes
+
+If for some unexpected reason Webots crashes, it is possible that the `hal` or `naoqi-bin` processes remain active in memory.
+In this case we recommend you to terminate these processes manually before restarting Webots.
+
+On Windows, use the Task Manager (the Task Manager can be started by pressing Ctrl+Alt+Delete): In the Task Manager select the `Processes` tab, then select each `hal.exe` and `naoqi-bin.exe` line and push the "End Process" button for each one.
+
+On Linux, you can use the `killall` or the `pkill` commands, e.g.:
+
+```sh
+$ killall hal naoqi-bin
+```
