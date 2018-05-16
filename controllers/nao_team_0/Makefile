@@ -39,7 +39,7 @@ NS_LIB_PATH = $(SOCCER_RESOURCES_PATH)/libraries/nao_soccer
 SV_LIB_PATH = $(SOCCER_RESOURCES_PATH)/libraries/soccer_vision
 INCLUDE = -I"$(NS_LIB_PATH)" -I"$(SV_LIB_PATH)" -I"$(SOCCER_RESOURCES_PATH)/controllers/nao_soccer_supervisor" -I"$(WEBOTS_NAOSIM_PATH)/include"
 LIBRARIES = -L"$(NS_LIB_PATH)" -lnao_soccer -L"$(WEBOTS_NAOSIM_PATH)/lib" -Wl,-rpath,"$(WEBOTS_NAOSIM_PATH)/lib" -L"$(SV_LIB_PATH)" -lsoccer_vision
-CFLAGS = -std=c++0x -Wno-deprecated-declarations
+CFLAGS = -std=c++0x -Wno-deprecated-declarations -DBOOST_SIGNALS_NO_DEPRECATION_WARNING -Wno-unused-local-typedefs -D_GLIBCXX_USE_CXX11_ABI=0
 
 ### Do not modify: this includes Webots global Makefile.include
 include $(WEBOTS_HOME_PATH)/resources/Makefile.include
