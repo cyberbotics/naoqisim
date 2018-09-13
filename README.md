@@ -32,10 +32,10 @@ Version R2018a was recently tested and is known to work with naoqisim.
 Set the `WEBOTS_HOME` environment variable to point to the Webots installation folder, as documented in the Webots user guide.
 
 ### Windows
-Open the MSYS2 console, `cd` to the naoqisim directory. Type `make` to complete the installation of the Simulator SDK and the `naoqisim` controller. Alternatively, you can compile the `naoqisim` controller by opening `controllers/naoqisim/naoqisim.sln` with Visual C++ to build the project.
+Open the MSYS2 console, `cd` to the naoqisim root directory. Type `make` to complete the installation of the Simulator SDK and the naoqisim controller. On the Simulator SDK is installed, you can compile the naoqisim controller by opening `controllers/naoqisim/naoqisim.sln` with Visual C++ to build the project.
 
 ### Linux
-Type `make` in the `controllers/naoqisim` folder.
+Type `make` in the naoqisim root directory to install the Simulation SDK and naoqisim controller. Once the Simulation SDK is installed, you can compile the naoqisim controller by typing `make` in the `controllers/naoqisim` folder.
 
 ## Use
 
