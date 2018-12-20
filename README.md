@@ -12,7 +12,7 @@ This repository contains the source code and dependencies needed to build the na
 ## Dependencies
 
 ### Development environment
-On Windows, it is necessary to install Microsoft Visual Studio C++ 2010 Express. You should also install MSYS2 from https://www.msys2.org to have a convienient UNIX-like environment to be able to execute the Makefiles.
+On Windows, it is necessary to install Microsoft Visual Studio C++ 2010 Express. You should also install MSYS2 (64 bit version) from https://www.msys2.org to have a convienient UNIX-like environment to be able to execute the Makefiles.
 On Linux, you will need the standard gcc compiler suite.
 On recent macOS distributions, naoqisim doesn't work any more.
 
