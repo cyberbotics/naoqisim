@@ -25,7 +25,8 @@ Version 2.1.4.13 was recently tested and is known to work with naoqisim.
 
 ### Webots
 Webots can be downloaded from https://cyberbotics.com
-Version R2019a revision 1 was recently tested and is known to work with naoqisim.
+You should use the latest version of Webots.
+Version R2019a revision 1 was recently tested and is known to work with naoqisim, but later versions should work as well.
 
 ## Build
 
