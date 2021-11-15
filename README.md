@@ -1,4 +1,4 @@
-# naoqisim
+# naoqisim [deprecated]
 NAOqi enabled controller for simulated NAO robots in Webots
 
 ## DISCLAIMER
