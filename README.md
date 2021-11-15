@@ -1,9 +1,10 @@
-# naoqisim [deprecated]
+# naoqisim (deprecated)
 NAOqi enabled controller for simulated NAO robots in Webots
 
 ## DISCLAIMER
 
 This software is provided as-is with the hope it may help users. It may or may not work, without any guarantee. It is not maintained any more, neither by Aldebaran / SoftBank Robotics, nor by Cyberbotics.
+It relies on outdated versions of Webots and NAOqi.
 
 ## Introduction
 
